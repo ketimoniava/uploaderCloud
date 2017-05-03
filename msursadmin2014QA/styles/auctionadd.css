@@ -1,0 +1,81 @@
+/*********************************************************************
+* This script has been released with the aim that it will be useful.
+* Written by Vasplus Programming Blog
+* Website: www.vasplus.info
+* Email: info@vasplus.info
+* All Copy Rights Reserved by Vasplus Programming Blog
+***********************************************************************/
+
+/*General Pop-up Background*/
+#vpb_pop_up_background {
+	display:none;
+	_position:absolute; /* hack for internet explorer 6*/
+	height:100%;
+	width:100%;
+	top: 0;
+	right: 0;
+	background:#000000;
+	border:1px solid #000000;
+	position: fixed;
+	z-index:99;
+}
+
+/*Login Box*/
+#vpb_login_pop_up_box {
+	display: none;
+	width: 610px;
+	border: solid 1px #c2c2c2;
+	background-color: #fff;
+	box-shadow: 0 0 10px #6b6b6b;
+	-moz-box-shadow: 0 0 10px #6b6b6b;
+	-webkit-box-shadow: 0 0 10px #6b6b6b;
+	-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;
+	padding:10px 20px 10px 20px;
+	top: 3%;	
+	left: 30%;
+	margin: auto;
+	position: absolute;
+	z-index: 99;
+	overflow: hidden;
+	float: left;
+}
+
+/*Textarea Boxes and Input Boxes Style*/
+.vpb_textAreaBoxInputs { 
+	float: left; 
+	min-width: 260px; 
+	width: auto; 
+	height:20px; 
+	font-family:Verdana, Geneva, sans-serif; 
+	font-size:12px; 
+	padding: 7px; 
+	padding-left:10px; 
+	padding-right: 10px; 
+	border: 1px solid #c3c3c3; 
+	outline:none; 
+	border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius:2px; 
+	line-height:20px; }
+
+.vpb_textAreaBoxInputs:focus { 
+	outline: none; 
+	border: 1px solid #c3c3c3; 
+	box-shadow: 0 0 10px #c3c3c3;
+	-moz-box-shadow: 0 0 10px #c3c3c3;
+	-webkit-box-shadow: 0 0 10px #c3c3c3;
+	}
+
+#vpb_login_pop_up_box form{
+	width: 610px;
+	float: left;
+	padding: 0px;
+	padding-bottom: 10px;
+	}
+	#vpb_login_pop_up_box form fieldset{
+	width: 588px;
+	float: left;
+	font: 0.77em/1.3em verdana, sylfaen; 
+	}
+#vpb_login_pop_up_box form label{
+	display: block;
+	padding-bottom: 10px;
+}
