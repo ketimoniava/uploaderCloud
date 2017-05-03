@@ -1,0 +1,192 @@
+.user-block {
+	width: 100%;
+	padding-top: 10px;
+}
+.wish-container {
+    overflow: hidden; 
+    width: 100%;
+}
+.wish-block {
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.profilepic {
+	width: 50px;
+	padding-right: 20px;
+	float: left;
+	overflow: hidden;
+}
+.user_full_name {
+	font: 0.88em/1.3em verdana, sylfaen; 
+	padding-bottom: 5px;
+	color: #454545;
+}
+.wish-item {
+    min-height: 100px;
+    margin-bottom: 15px;
+	border: 1px dotted #e8e8e8;
+	background: white;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 0px #f3f3f3;
+	overflow: hidden;
+}
+.wish-header {
+	float: left;
+	overflow: hidden;
+	line-height: 40px;
+	font: 0.88em/1.3em verdana, sylfaen; 
+	padding: 0px 0px 10px 0px;
+	color: #6b6b6b;
+}
+.wish-header a {
+	color: #209da8;
+	font-weight: bold;
+}
+.wish-body {
+	width: 100%;
+	padding: 0px;
+	overflow: hidden;
+	font: 0.88em/1.3em verdana, sylfaen; 
+}
+.wish-body img {
+	float: left;
+	margin-right: 10px;
+}
+.wish-actions {
+	overflow: hidden;
+	background: white;
+}
+ul.wish-action-items {
+	width: 100%;
+	padding: 5px 0px 5px 0px;
+	margin-top: 15px;
+	font: 0.88em/1.4em sylfaen;
+	overflow: hidden;
+	border-top: 1px dotted #e7e7e7;
+	border-bottom: 1px dotted #e7e7e7;
+	text-align: right;
+}
+ul.wish-action-items li {
+	list-style: none;
+	padding: 5px 0px; 
+	text-align: right;	  
+}
+ul.wish-action-items li a {
+	text-decoration: none;
+	color: #1b738c;  
+}
+ul.wish-action-items li a:hover {
+	text-decoration: underline;
+}
+
+.wish-comments {
+	margin-top: 5px;
+	padding-bottom: 10px;
+}
+
+.wish-comment {  
+		width: 100%;
+		padding: 10px 0px 10px 0px;
+		border-bottom: 1px dotted #e7e7e7;
+		font: 0.88em/1.4em verdana, sylfaen;
+		overflow: hidden;
+}
+
+.wish-comment a {
+	color: #2b8590;
+}
+
+.wish-comment a:hover {
+		text-decoration: underline;
+}
+
+.wish-comment img {
+		margin-right: 10px;
+		float: left;
+}
+
+.wish-comment p {
+		overflow: hidden;
+}
+
+.wish-add-comment {
+	  margin-top: 10px;
+	  padding: 10px 5px 10px 10px;
+	  background: #c2cdce;
+}
+
+.wish-add-comment-box {
+	  width: 70%;
+	  height: 70px;
+	  border: 1px solid #c2cdce;
+}
+
+.wish-add-comment button {
+		border: 1px solid #e2e2e2; 
+		background: #efecec;
+		padding: 4px 5px 4px 5px;
+}
+
+.wish-box {   
+}
+
+.has-error {
+	border: 1px solid red;
+} 
+
+.fulfil {
+	position: relative;    
+}
+
+.fulfil .notify-box {
+  display: none;
+}
+
+.animation_image { 
+					  background: #F9FFFF; 
+					  border: 1px solid #E1FFFF; 
+					  padding: 10px; 
+					  width: 500px; 
+					  margin-right: auto; 
+					  margin-left: auto; 
+					}
+.wish-privacy {
+					width: auto;
+					float: right;
+					background: #D2D2D2;
+					border-radius: 3px;
+					}
+.click {
+		font: 0.77em/1.3em verdana, sylfaen; 
+		font-weight: 700; 
+		display: block;
+		padding: 3px 3px 6px 3px;
+}
+.wish-privacy ul { 
+		width: 90px;
+		border: 1px #47a5ad solid;
+		overflow: hidden;
+		display: none;
+		padding: 0px;
+		list-style-tradius: 3px;
+		font: 0.ype: none;
+		border-88em/1.3em verdana, sylfaen;
+		position: absolute;
+		background: #fff;
+		float: right;
+		}
+
+.wish-privacy ul li { 
+		padding: 3px 5px 3px 5px;
+		z-index: 2; 
+		font: 0.77em/1.3em verdana, sylfaen; 
+		display: none;
+ }
+.wish-privacy ul li:hover { 
+				background: #47a5ad; 
+				color: #fff; }
+.wish-privacy li.init { cursor: pointer; }
+a#submit { z-index: 1; }
+.wish-privacy div {  padding: 30px 0px 30px 0px; }
