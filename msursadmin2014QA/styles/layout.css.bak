@@ -1,0 +1,592 @@
+html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
+div, p, span, h1, h2, h3, h4, p, ul, ol, li, form, fieldset, legend, label, input, select, textarea, table, td, tr, th { margin: 0; padding: 0; list-style-type: none; }
+
+.page-wrapper { width: 980px; /*background: yellow;*/ margin: auto; padding-bottom: 15px; overflow: hidden; }
+.page-wrapper h1 { overflow: hidden; padding: 20px 0px 20px 0px; float: left;  font: 1.1em/1.3em verdana, sylfaen; overflow: hidden; }
+.page-wrapper h1 a {  color: #9d205b; text-decoration: none; }
+.header-advertise { width: 400px; height: 0px; float: right; overflow: hidden; background: transparent; }
+.page-wrapper h3 { padding: 5px 20px 5px 0px; color: #26657f; font: 0.88em/1.3em verdana, sylfaen; }
+
+.config { width: 200px; float: right; padding: 5px 0px 15px 0px; list-style-type: none; overflow: hidden; }
+.config li { float: left; padding: 5px 0px 5px 10px; font: 0.77em/1.3em verdana, sylfaen; }
+.config li a { text-decoration: none; color: #6b6b6b; }
+
+.site_title { width: 250px; padding: 0px 10px 20px 0px; float: left;  /*background: yellow;*/ overflow: hidden; }
+.site_title a { font: 1.2em/1.3em verdana, sylfaen; color: #676767; }
+.site_title a img { border: 0px; }
+
+.top_advertise { width: 400px; padding: 20px 0px 20px 0px; float: left;  }
+.top_advertise a img { border: 0px; }
+
+.categories { width: 100%; margin 5px auto; float: left; overflow: hidden; padding: 10px 0px 10px 0px; border-top: 1px solid #E1E1E1;  border-bottom: 1px solid #E1E1E1;  /*background-color: #cfe3eb;*/ }
+.categories li { float: left;  padding: 0px 5px 0px 10px; }
+.categories li a { text-decoration: none; font: 0.78em/1.3em verdana, sylfaen;  color: #666666; }
+.categories li a:hover { text-decoration: underline; color: #26657f;  }
+.categories_sub { width: 970px; overflow: hidden; padding-left: 10px; background-color: #cecbcb; }
+.categories_sub li { float: left;  padding: 10px 10px 10px 10px; }
+.categories_sub li a { text-decoration: none; color: #26657f; font: 0.75em/1.3em sylfaen; }
+.categories_sub li a:hover { text-decoration: underline; color: #26657f; }
+
+.insert_lot { width: 140px; float: right; background-color: #333333; overflow: hidden; font: 0.88em/1.3em verdana, sylfaen; text-align: center; position: relative; top:20px; right: 0px;}
+.insert_lot a { display: block; padding: 5px 5px 5px 5px; color: #ffffff; text-decoration: none; }
+.insert_lot a:hover { background-color: #666666; }
+
+.menu { width: 200px; float: left; padding: 0px; background-color: #ddd; margin: 0px; }
+.menu li { padding: 5px 5px 5px 5px; border-bottom: 1px solid #ececec; }
+.menu li a { font: 0.77em/1.3em sylfaen; color: black;  text-decoration: none; }
+.menu li a:hover { text-decoration: none; color: #666666; }
+.insert_page { width: 200px; float: right; background: #333333;  font: 0.77em/1.3em sylfaen;  overflow: hidden; } 
+.insert_page a { display: block;  padding: 5px 5px 7px 10px; text-decoration: none; color: #ffffff; }
+.center .insert_page  { width: 160px;  text-align: center; }
+
+.update_list { width: 700px; float: left; /*background-color: #cfe3eb;*/ padding: 15px 0px 0px 0px; }
+.update_list li { border-bottom: 1px solid  #26657f;; padding: 5px 0px 5px 10px; }
+form { width: 700px; float: left; overflow: hidden; }
+fieldset { border: 0px; }
+legend { color: #26657f; }
+table tr { border-bottom: 1px solid  #e7e6e6;; padding: 5px 0px 5px 10px; }
+.contact_table { width: 800px; margin-left: 10px; border: 1px solid gray; border-right: 0px; }
+.contact_table th { padding: 5px; }
+.contact_table tr { border-right: 1px solid gray; }
+.contact_table td { padding: 3px; border-top: 1px solid gray; border-right: 1px solid gray; font: 0.88em/1.3em verdana, sylfaen; }
+
+.left_categories { width: 190px; list-style-type: none; /*background: pink;*/ padding: 0px 0px 10px 0px; font: 0.88em/1.3em verdana, sylfaen;}
+.left_categories li { padding: 7px 0px 7px 0px; /*border-bottom: 1px dotted silver;*/ } 
+.left_categories li  a {/* font: 0.81em/1.3em verdana, sylfaen;*/ color: #6d6d6d; text-decoration: none; } 
+.left_categories li.active_cat a { color: #3f7e98 }
+.left_categories li.active_cat ul li a { color: #595959; }
+.left_categories li  a:hover { color: #96c2cb; } 
+.left_categories li ul { width: 190px; list-style-type: none; padding: 3px 0px 6px 0px; margin-top: 3px; /*border: 1px solid #CECECE*/ }
+.left_categories li ul li { border-bottom: 1px solid #CECECE; padding: 0px;  }
+.left_categories li ul li a { display: block; padding: 7px 5px 7px 10px; color: red;}  
+.left_categories li ul a:hover { /*text-decoration: underline;*/ color: #595959; background: #fbf9f9; }  
+.left_categories li ul li.active_cat a { /*text-decoration: underline;*/  background: #00a6c9; color: #FFFFFF; }
+
+.filters { width: 100%; }
+.filters span { display: block; 
+					   margin-top: 10px; 
+					   padding: 5px 0px 5px 5px; 
+					   font: 0.77em/1.3em verdana, sylfaen; 
+					   color: #2891a7; 
+					   background: url("../images/filter_list_head.png") no-repeat; }
+.filter_list { list-style-type: circle; 
+				  padding-left: 15px; }
+.filter_list { width: 200px; 
+				   padding: 5px 5px 5px 5px; 
+				   border: 1px solid #CCCCCC; 
+				   list-style-type: disc; 
+				   list-style-position: inside; }
+.filter_list li { font: 0.88em/1.3em sylfaen; 
+					 padding: 3px 0px 3px 4px;  }
+.filter_list li a { color: #595959; 
+						text-decoration: none;  }
+.filter_list li a:hover { text-decoration: underline; }
+li.active_filter a{ text-decoration: underline;
+							font-weight: bold; }
+.show_all_products { padding-top: 10px; }
+.show_all_products a { font: 0.81em/1.3em verdana, sylfaen;
+										color: #595959; 
+										padding-left: 0px; }
+
+.contact_adress { padding: 20px; }
+.contact_adress  a { color: #9d205b; }
+.contact_form { padding: 20px; }
+.contact_form  label { padding: 10px; 
+									 color: #4a70a3; }
+.head { background-color: #8598b2; 
+			 color: white; }
+.delete_list { width: 300px; 
+					  float: left; 
+					  border: 1px solid #e2e2e2; 
+					  background-color: #edeae1; 
+					  border-right: 0px; 
+					  font: 0.88em/1.3em verdana, sylfaen; }
+.delete_list caption { text-align: left; 
+									font: 0.88em/1.3em sylfaen; 
+									padding: 10px 0px 10px 0px; }
+.delete_list tr th { background-color: #edeae1; 
+							padding-bottom: 5px; 
+							text-align: left; 
+							color: #8497ac; 
+							border-right: 1px solid #e2e2e2;  }
+.delete_list tr td { border: 1px solid #e2e2e2; 
+							  padding: 3px; 
+							  border-bottom: 0px; 
+							  border-left: 0px; 
+							  background-color: #e9e9e9; }
+.headline { width: 630px; }
+td.del_check { padding-left: 30px; }
+.delete_data { width: 100%; overflow: hidden; }
+.delete_data p { width: 100px; 
+							 padding: 10px 0px 0px 0px; }
+.yes { float: right; }
+.no { float: left; }
+
+.content { width:  100%; 
+				 /*background: gray;*/ 
+				 margin: auto; 
+				 overflow: hidden; 
+				 padding-top: 15px; }
+.left { width: 220px; /*background: silver;*/  float: left;  }
+.main-content { width: 730px; 
+							float: left; 
+							/*background: gray;*/ 
+							overflow: hidden; 
+							padding: 0px 0px 0px 20px; }
+.reklama-content { width: 970px; float: left; /*background: gray;*/ overflow: hidden; padding: 0px 0px 0px 0px;}
+.main-content h3 { /*background: yellow;*/ padding: 10px; font: 0.99em/1.2em verdana, sylfaen; }
+.block1 { width: 755px; /*background: gray;*/ float: left; overflow: hidden; }
+.updatebannerlink { width: 100%; padding: 5px 0px 5px 0px; font: 0.88em/1.2em sylfaen; color: #9d205b; }
+.updatebannerlink a { text-decoration: none; color: #2C5461; }
+.images1 { width: 760px; padding: 2px; border: 1px solid silver; }
+.block2 { width: 754px; /*background: gray;*/ overflow: hidden;  padding: 10px 0px 10px 5px; }
+.block2 span { padding: 5px 0px 5px 0px; /*background: yellow;*/ display: block;} 
+.block2 span a { font: 0.88em/1.2em sylfaen; color: #9d205b; text-decoration: none; }
+.block2 span a:hover { color: #9d205b; text-decoration: underline; }
+.block2 div img { padding: 2px; border: 1px solid silver; }
+.images2 { width: 372px; padding-right: 5px; /*background: yellow;*/ float: left; }
+.images3 { width: 372px; float: left; }
+.content h2 { padding: 10px 0px 10px 0px; font: 2.0em/1.2em verdana, sylfaen; color: #666666; text-align: left; }
+.head { width: 100%; background: #efefef;  padding: 5px 0px 5px 0px; overflow: hidden; }
+.head h2 { width: 30%; float: left; }
+
+.addprod { width: 100%; padding: 10px 0px 20px 0px; overflow: hidden; font: 0.88em/1.3em verdana, sylfaen; }
+.addprod p { width: 150px; background: #373737; text-align: center; float: right; }
+.addprod p a { display: block; padding: 5px; text-decoration: none; color: #ffffff; }
+.addprod p a:hover { background: #595959; }
+
+.rel_nav { width: 70%; float: right; }
+.rel_nav li { float: right; padding: 7px 5px 0px 0px; }
+.rel_nav li a { font: 0.77em/1.3em verdana, sylfaen; color: #7f817d; text-decoration: none; }
+.rel_nav li a:hover { text-decoration: underline; }
+
+.block3 { width: 755px; padding: 10px 0px 10px 5px; }
+.block3 span { padding: 5px 0px 5px 0px; /*background: yellow;*/ display: block; } 
+.block3 span a { font: 0.88em/1.2em sylfaen; color: #9d205b; text-decoration: none; }
+.block3 span a:hover { color: #9d205b; text-decoration: underline; }
+.block3 a img { padding: 2px; border: 1px dotted gray; }
+.images4 { width: 245px; float: left; padding-right: 6px; }
+.images5 { width: 245px; float: left; padding-right: 6px; }
+.images6 { width: 245px; float: left; }
+
+.rightBanners { width: 970px; /*background: yellow;*/ padding: 0px 0px 0px 0px; overflow: hidden; clear: both; }
+.rightBanners li { width: 190px; float: left; overflow: hidden; padding: 5px 5px 5px 0px; } 
+.addUpdBanner { width: 190px; padding: 5px 0px 5px 0px; }
+.addUpdBanner a { font: 0.88em/1.3em verdana, sylfaen; text-decoration: none; }
+.left_block { width: 200px; /*background: yellow;*/  float: left; padding-right: 20px; }
+.brands { width: 100%; }
+.brands li { border-bottom: 1px solid silver; padding: 3px 0px 3px 0px; }
+.brands li a { font: 0.88em/1.3em verdana, sylfaen; color: #6c6049;  text-decoration: none; }
+.brands li a:hover { color: #339999; }
+
+.center { width: 755px; 
+				float: left; 
+				/*background:  #FFFF99; */
+				overflow: hidden; 
+				margin-right: 0px; 
+				padding: 0px 0px 10px 0px; }
+.center h3 a { font: 0.88em/1.2em verdana, sylfaen; color: #CC0033; text-decoration: none; }
+.center h3 a:hover { text-decoration: underline; }
+.right { width: 220px; float: right; }
+.right a img { border: 0px; }
+.wide-content { width: 100%; margin: 0px;  padding: 0px; }
+.wide-content p { padding: 5px 0px 5px 0px; }
+.related { font: 0.88em/1.3em verdana, sylfaen; padding: 10px 10px 10px 10px; background: #eaeaea; color: #6c6049; }
+.related_cats { font: 0.88em/1.3em verdana, sylfaen; }
+.related_cats li { padding: 5px 0px 5px 0px; }
+.related_cats li a { color: #6d6d6d; text-decoration: none; }
+.related_cats li a:hover { color: #035e98; }
+
+.processed { width: 100%; }
+.processed p { font: 0.88em/1.3em verdana, sylfaen;  }
+.pageNav { max-width: 100%; border-bottom: 1px dotted silver; overflow: hidden;  list-style-type: none; margin: 0px; padding: 5px 0px 5px 0px ; /*background: #B0C4DE;*/ }
+.pageNav li { float: left; padding: 3px 7px 3px 0px;   font: 0.88em/1.3em verdana, sylfaen; } 
+.pageNav li a {  font: 0.77em/1.3em verdana, sylfaen; color: #4c659f; text-decoration: none;  }
+.pageNav li a:hover { text-decoration: underline; }
+li.active_cat { position: relative; top: 0px; }
+.pageNav li span { color: #999999; padding-left: 7px;  font: 0.77em/1.3em verdana, sylfaen; }
+.processed p a { text-decoration: none;  color: #525252; }
+.processed p a:hover { text-decoration: underline; }
+
+.show_all { font: 0.77em/1.3em verdana, sylfaen; text-align: right; }
+.show_all a { text-decoration: none; color: #606060; }
+.show_all a:hover { text-decoration: underline; }
+
+.rightCategory { padding: 0px 10px 0px 10px; } 
+
+.category { width: 100%; overflow: hidden; /*background: silver;*/ padding-top: 0px; /*border-bottom: 1px solid #e2e2e2;*/ }
+.category caption { text-align: left; color: gray; padding: 10px 0px 10px 0px;font: 0.88em/1.3em verdana, sylfaen;  }
+.category tr { width: 100%; /*background: yellow;*/ }
+.category th { padding-left: 3px; /*border-bottom: 1px solid gray; border-right: 1px solid gray;*/ background: white; font: 0.77em/1.3em verdana, sylfaen; padding: 10px 0px 10px 0px;  text-align: left; font-weight: bold;  }
+.category td { padding: 10px 5px 10px 0px; border-bottom: 1px solid #c3c3c3; overflow: hidden; /*border-right: 1px solid gray; border-bottom: 1px solid gray;*/  font: 0.88em/1.3em verdana, sylfaen; } 
+.category td a { text-decoration: none; color: #616161; }
+.category td a img { border: 0px; }
+tr.active_cat { /*background: silver;*/ }
+td.redaqtText { width: 30px; font: 0.88em/1.2em sylfaen; color: #669999; /*background: yellow;*/ }
+.active_prod_cat { width: 100%; padding: 5px 0px 10px 0px; font: 0.88em/1.3em verdana, sylfaen;  }
+.catheadline { width: 80%; }
+.on_auction { background: #EFBEC4; overflow: hidden; }
+.after_auction { background: #AFBCBC; overflow: hidden; }
+.before_auction { background: #73C88C; overflow: hidden; }
+.on_site { background: #8ec8ab; overflow: hidden; }
+.canceled_auction { background: #EBA0A3; overflow: hidden; }
+.navigate { width: 100%; /*background: #e4e4e4;*/ padding: 10px 0px 8px 0px; overflow: hidden; }
+.navigate li { float: left; padding-right: 10px; font: 0.88em/1.2em verdana; color: #286291; font-weight: bold; }
+.navigate li a { color: black; text-decoration: none; }
+.navigate li a:hover { text-decoration: underline; }
+.navigate li a img { border: 0px; position: relative; top: 2px; }
+.addauction { width: 155px; height: 30px; overflow: hidden; padding: 10px; float: right; font: 0.88em/1.3em verdana, sylfaen; text-align: center;  }
+.addauction a { display: block; padding: 3px 3px 3px 3px; background: #373737; color: #fff; text-decoration: none; }
+.addauction a:hover { background: #595959; color: #fff; text-decoration: none; }
+
+.left_categories { width: 200px; list-style-type: none; /*background: pink;*/ padding: 10px 0px 10px 0px; }
+.left_categories li { padding: 7px 0px 7px 0px; /*border-bottom: 1px dotted silver;*/ } 
+.left_categories li  a {/* font: 0.81em/1.3em verdana, sylfaen;*/ color: #6d6d6d; } 
+.left_categories li.active_cat a { color: #3f7e98; }
+.left_categories li.active_cat ul li a { color: #595959; }
+.left_categories li  a:hover { color: #96c2cb; } 
+.left_categories li ul { width: 200px; list-style-type: none; padding: 3px 0px 6px 0px; margin-top: 3px; /*border: 1px solid #CECECE*/ }
+.left_categories li ul li { border-bottom: 1px solid #CECECE; padding: 0px; }
+.left_categories li ul li a { display: block; padding: 7px 5px 7px 10px; color: #96c2cb; }  
+.left_categories li ul a:hover { color: #595959; background: #fbf9f9; }  
+.left_categories li ul li.active_cat a { background: #00a6c9; color: #FFFFFF; }
+
+.reason { width: 100%; background: #EAEAEA; overflow: hidden; }
+.reason p { font: 0.88em/1.3em verdana, sylfaen; padding: 3px 0px 3px 10px; }
+.yes_no { width: 100%; list-style: none; }
+.yes_no li { float: left; padding: 0px 10px 0px 5px; }
+.videos { padding: 10px; }
+.videos li { width: 150px; float: left;  padding: 10px; margin: 5px;  border: 1px dotted black; overflow: hidden; }
+.videos li a { font: 0.77em/1.2em sylfaen; padding-top: 5px; color: #32718e; text-decoration: none; }
+.videos li img { padding-bottom: 5px; }
+
+.galleries { padding: 10px; }
+.galleries li { padding-top: 10px; }
+.galleries li a { color: #32718e; text-decoration: none; }
+.rightCategories { width: 100%; padding: 0px 0px 10px 0px; }
+.rightCategories li { padding: 5px 0px 5px 0px; overflow: hidden; border-bottom: 1px solid #E9E9E9; }
+.rightCategories li a { color: #32718e; text-decoration: none; font: 0.77em/1.3em verdana, sylfaen;}
+.rightCategories li a:hover { color: #BE2E38; }
+.rightCategories li a img { border: 0px; float: right; padding: 5px 0px 5px 5px; }
+
+.update { width: 740px;
+				padding: 5px 0px 10px 0px; 
+				}
+.update legend { width: 650px; 
+							 font: 0.88em/1.3em verdana, sylfaen; 
+							 color: #979899; 
+							 overflow: hidden; }
+.update fieldset { width: 715px; 
+							  overflow: hidden; 
+							  padding: 0px 8px 10px 10px;
+							  /*background: gray;*/ 
+							  border: 1px dotted gray; }
+.update fieldset fieldset { width: 665px; 
+											padding: 0px 10px 10px 10px; 
+											border: 1px dotted gray; }
+.select_b_wrapper { width: 100%; 
+									overflow: hidden; }
+.select_block { width: 230px; 
+						  padding: 10px 0px 10px 0px; 
+						  float: left; 
+						  overflow: hidden; }
+.input_block { overflow: hidden; 
+						background: #f5f5f5; 
+						margin-top: 1px; 
+						padding: 10px 0px 10px 10px; }
+.input_block p {  width: 150px;
+							height: 70px;
+							float: left; 
+							/*background: #33FFCC;*/
+							padding: 0px 0px 0px 15px; 
+						 }
+.input_block p input { padding: 0px; }
+.update input[type='text'] { width: 705px; padding: 0px 5px 0px 5px; margin: 0px; }
+.update textarea { width: 705px; padding: 0px 5px 0px 5px; margin: 0px; }
+.input_block input[type='button'] { padding: 5px; margin: 0px; border: 1px solid #808080; background: #808080; color: #ffffff; }
+.update input[type='submit'] { padding: 5px; margin: 0px; border: 1px solid #808080; background: #808080; color: #ffffff; }
+.update select { width: 200px; height: 28px; display: block; float: left; padding: 5px; margin-right: 10px; border: 1px solid #b6b6b6; background: #eaeaea; overflow: hidden; }
+.update label { display: block; padding: 5px 0px 5px 0px; font: 0.77em/1.3em verdana, sylfaen; color: #32718e; /*background: yellow;*/  }
+.submit { padding-top: 10px; }
+.chstatus { width: 100%; overflow: hidden; padding: 10px 0px 10px 0px; }
+.makemain { width: 200px; float: left; padding-right: 15px; overflow: hidden; /*background: yellow;*/ text-align: left; }
+.makemain a { font: 0.88em/1.3em sylfaen; color: #FF0000; text-decoration: none; }
+.makemain label { display: inline; padding-right: 10px; }
+.photoblock { width: 232px; height: 175px;  overflow: hidden; float: left;  }
+.photoblock p { font: 0.77em/1.3em verdana, sylfaen; }
+.photoblock p span { padding-left: 5px; position: relative; top: -3px; }
+
+.inputphotoblock { width: 100%; padding-top: 10px; overflow: hidden; }
+.inputblock { width: 232px; /*background: yellow;*/ overflow: hidden; float: left; }
+
+.update p a { font: 0.88em/1.3em sylfaen; color: #34727f; text-decoration: none; }
+.update p a:hover { text-decoration: underline; }
+.backward { width: 100%; overflow: hidden; padding-top: 5px; font: 0.88em/1.3em sylfaen; color: #34727f;  }
+.backward a { color: #CC0033; } 
+.update1 { padding: 10px; }
+.update1 legend { width: 450px; color: #979899; }
+.update1 fieldset { width: 500px; padding: 10px; /*background: gray;*/ border: 1px dotted gray; }
+.update1 label { color: #32718e; /*background: yellow;*/  }
+
+.auctions { width: 735px; border: 1px solid #DADADA;  border-right: 0px; border-bottom: 0px;  font: 0.88em/1.3em sylfaen; color: #34727f; }
+.auctions th { text-align: left; padding: 10px; border-right: 1px solid #DADADA; overflow: hidden; }
+.auctions tr td { padding: 10px; border-bottom: 1px solid #DADADA;  border-right: 1px solid #DADADA; overflow: hidden;  }
+.auctions tr td a { padding: 3px; background: #ebebeb; color: #83aa54; text-decoration: none;}
+.active_auction { background: #83aa54; }
+.active_auction td { color: #ebebeb; }
+
+.prodcategories { width: 150px; background: white; font: 0.77em/1.3em sylfaen; padding: 5px 0px 5px 0px; text-align: center; }
+.prodcategories a { display: block; padding: 5px 5px 5px 5px; color: #fff; background: #373737; text-decoration: none; }
+.prodcategories a:hover { background: #595959;  }
+.products { width: 700px; background: #d3d9ee; padding: 10px; overflow: hidden; }
+.products h3 { padding: 0px; font: 0.88em/1.3em verdana, sylfaen; }
+.products p { padding-top: 5px 10px 10px 0px; color: black; font: 0.77em/1.3em verdana, sylfaen; }
+p.date { padding: 5px 5px 5px 0px; color: #39414F; font: 0.77em/1.3em verdana, sylfaen; background: none; }
+.products img { float: right; }
+
+
+
+.topProducts { width: 100%; }
+/*.topProducts div { width: 100%;  padding: 10px 0px 10px 0px; border-bottom: 1px dotted silver;  }*/
+.topProducts h2 { width: 100%; padding: 0px 0px 5px 0px; }
+.topProducts h2 a { font: 0.77em/1.3em verdana, sylfaen; text-decoration: none; color: #414141; font-weight: bold;  }
+.topProducts h2 a:hover { text-decoration: underline; }
+.topProducts p { font: 0.77em/1.3em verdana, sylfaen; color: #414141;}
+.product { width: 100%; padding: 10px 0px 10px 0px; overflow: hidden; border-bottom: 1px dotted #CACACA; }
+.product p { font: 0.88em/1.3em verdana, sylfaen; color: #868686; }
+.productphoto { width: 100px; padding-right: 10px; float: left; /*background: yellow;*/ }
+.productphoto a img { border: 0px; }
+.productdesc { width: 850px; float: right; }
+.productdesc h2 { font: 0.88em/1.3em verdana, sylfaen; }
+.productdesc h2 a { color: #6299b0; text-decoration: none; }
+.footer { width: 970px; margin: 5px auto; padding: 5px 0px 5px 0px; overflow: hidden; border-top: 1px solid #e9e6e7; }
+.footer a{ color: white; }
+.footer p{ font: 0.77em/1.3em verdana, sylfaen;   }
+
+.auctionProducts { width: 100%; /*background: yellow;*/ padding: 10px 0px 10px 0px; border-bottom: 1px dotted silver; overflow: hidden; float: left; }
+.auctionProducts h1 { padding: 0px 0px 5px 0px; font: 1.1em/1.3em verdana, sylfaen; color: #4b839a; }
+.auctionProducts h3 { padding: 0px 0px 5px 0px; font: 0.88em/1.3em verdana, sylfaen; color: #6299b0; }
+.auctionProducts h3 a { color: #3f7e98; text-decoration: none; }
+.auctionProducts h3 a:hover { color: #545e6b; }
+.detaled-photo { width: 400px; float: left; }
+/*.auctionProducts p { font: 0.66em/1.3em verdana, sylfaen; verdana, sylfaen; color: #676767; overflow: hidden; }
+.auctionProducts p img { float: left; padding: 0px 10px 5px 0px; } */
+
+.bids { width: 100px; padding-left: 5px; float: left; overflow: hidden; text-align: center; font: 0.77em/1.3em verdana, sylfaen; }
+.start_price { width: 100px; padding: 5px; float: left; background: #E6E6E6; ext-align: center;  font: 0.77em/1.3em verdana, sylfaen; }
+.brand { padding-bottom: 10px; }
+.auction_end_date { width: 100px; float: left; overflow: hidden; padding-left: 0px; text-align: right; color: #FF6600;  font: 0.77em/1.3em verdana, sylfaen; }
+.restOfDates { width: 300px; /*background: pink;*/ overflow: hidden; }
+.auctionProducts p { width: 100px; padding-left: 10px; /*background: silver;*/ overflow: hidden; float: left;  font: 0.77em/1.3em verdana, sylfaen;  }
+.rest_title { width: 150px; float: left; }
+.auctionProducts p span { width: 100%;  /*background: silver;*/ overflow: hidden; font: 0.95em/1.3em verdana, sylfaen; color: #b22929; }
+.auctionProducts div { width: 100%; padding-top: 5px; overflow: hidden; }
+.auctionProducts div img { padding-right: 5px; position: relative; top: 3px; }
+p.shortsummary { width: 390px; padding: 0px; float: left; text-align: left; font: 0.77em/1.3em verdana, sylfaen; }
+p.shortsummary a { border: 0px; text-decoration: none; color: #818181; }
+p.shortsummary img { float: left; padding-right: 10px; }
+
+.bidding { width: 400px; float: left; padding: 0px 10px 10px 0px; /*background: silver;*/ border: 1px solid #CCCCCC; }
+.bidding  h1 { padding: 10px 5px 10px 5px;  font: 0.99em/1.3em verdana, sylfaen; background: #CCCCCC; }
+.bid_notes { width: 390px; font: 0.77em/1.3em arial, sylfaen; color: #666666; padding: 5px 0px 5px 0px; border-bottom: 1px solid #CCCCCC; overflow: hidden; margin-left: 5px;}
+.bid_notes a { text-decoration: none; color: #993366; }
+.bid_notes a:hover { text-decoration: underline; }
+p.bodytext1 { width: 100%; overflow: hidden; padding: 10px 0px 0px 0px; color: #464646; }
+
+.inbox { width: 400px; float: right; padding: 0px 10px 0px 0px; margin-top: 10px; /*background: yellow;*/ border: 1px solid #CCCCCC; }
+.inbox  h3 { padding: 10px 5px 10px 10px;  font: 0.99em/1.3em verdana, sylfaen; background: #CCCCCC; }
+.inbox  h4 { padding: 0px 5px 10px 0px;  font: 0.88em/1.3em verdana, sylfaen; }
+.inbox { width: 385px; /*font: 0.88em/1.3em arial, sylfaen;*/ color: #666666; padding: 0px 0px 5px 0px; border-bottom: 1px solid #CCCCCC; overflow: hidden; margin-left: 5px;}
+.inbox a { text-decoration: none; color: #558ebe; }
+.inbox a:hover { text-decoration: underline; }
+p.bodytext1 { width: 100%; overflow: hidden; padding: 10px 0px 0px 0px; color: #464646; }
+.inbox ul { width: 390px; padding: 5px 0px 5px 0px; overflow: hidden; }
+.inbox li { 
+				padding: 8px 5px 8px 10px; 
+				border-bottom: 1px solid #CCCCCC;
+				overflow: hidden;
+			  }
+.image { width: 100px; overflow: hidden; padding-right: 10px; float: left; }
+.inbox li p { font: 0.88em/1.3em verdana, sylfaen; }
+
+.top_auctions { width: 545px; float: left; overflow: hidden; /*background: yellow;*/ margin-left: 10px;border: 1px solid #CCCCCC;  }
+.top_auctions p { width: 545px; overflow: hidden; padding: 0px; }
+.top_auctions .auctionProducts { width: 530px; margin-left: 5px; }
+.top_auctions h2 { padding: 10px 5px 10px 5px;  font: 0.99em/1.3em verdana, sylfaen; background: #CCCCCC; }
+
+.top_auctions .auctionProducts  h3 { padding: 0px;  }
+.stand_form { width: 615px; /*background: gray;*/ padding: 0px 10px 10px 10px; }
+.stand_form h3 { font: 0.99em/1.3em verdana, sylfaen; color: #cf2222; background-color: #26657f;  }
+.stand_form span { font: 0.77em/1.3em verdana, sylfaen; }
+.stand_form label { display: block; font: 0.77em/1.3em verdana, sylfaen; padding: 3px 0px 5px 0px; /*background: green;*/ }
+.stand_form fieldset { border: 1px solid #dad5d5; padding: 10px 5px 10px 5px; }
+.stand_form fieldset legend { font: 0.77em/1.3em verdana, sylfaen; color: #cf2222; }
+.stand_form div { padding: 5px 5px 5px 5px;  background: #efefef; margin: 3px; overflow: hidden;}
+.gender { width: 60px; float: left;  }
+.birthDate { width: 120px; float: left; overflow: hidden; }
+.fullName { width: 150px; float: left; padding: 0px 20px 0px 0px; }
+.contactsInfo { width: 150px; float: left; padding: 0px 20px 0px 0px; }
+.stand_form p {  }
+
+.update_list { width: 100%; overflow: hidden;  /*background: yellow;*/}
+.update_list li { border-bottom: 1px dotted silver; font: 0.88em/1.3em verdana, sylfaen; padding: 10px 0px 10px 0px; }
+.update_list li a { color: #CC3333; font: 0.77em/1.3em verdana, sylfaen; }
+
+.pays { width: 500px; padding: 10px 0px 10px 0px; }
+.pays th { font: 0.77em/1.3em verdana, sylfaen; text-align: left; padding: 5px 0px 5px 0px; }
+.pays td { font: 0.77em/1.3em verdana, sylfaen; } 
+
+
+.bids_info { width: 100%;; overflow: hidden; padding: 5px 0px 5px 0px; }
+.bids_info p { width: 30%; float: left; padding-right: 10px; font: 0.88em/1.3em verdana, sylfaen; color: #337b96; }
+.showBids h2 { width: 100%; overflow: hidden; font: 1.4em/1.3em verdana, sylfaen; color: #337b96; }
+.showBids h2 a { text-decoration: none; color: #3E86A8; }
+/*.showBids table { width: 950px; border-collapse: separate; border-spacing: 0px; border: 1px solid #66CCCC; border-right: 0px solid #66CCCC; }
+.showBids table caption { padding: 10px 10px 10px 0px; font: 0.88em/1.3em verdana, sylfaen; color: #337b96; text-align: left; }
+.showBids table tr th { padding: 3px;  border-right: 1px solid #66CCCC; font: 0.77em/1.3em verdana, sylfaen; color: #5D5D5D; font-weight: bold; text-align: left; }
+.showBids table tr td { border-top: 1px solid #66CCCC; border-right: 1px solid #66CCCC; font: 0.77em/1.3em verdana, sylfaen; color: #5D5D5D; padding: 3px; }
+.showBids table tr td a { color: #337b96; }
+td.table_bottom { color: red; }*/
+
+.smallsearch { width: 960px; display: block; /*background: gold;*/ background: #AAC8DF; margin: 10px 0px 10px 0px; padding: 30px 0px 10px 10px; overflow: hidden; }
+.smallsearch fieldset { border: 0px; }
+.smallsearch fieldset legend { display: none; }
+.inserttext input { height: 22px; position: relative; top: -13px; border: 2px solid #c5c5c5; padding: 0px 5px 0px 5px; font: 0.66em/1.3em verdana, sylfaen; color: #848282; }
+.smallsearch input[type=submit] { width: 70px; position: relative; top: -7px; padding: 3px; border: 1px solid #C9C9C9; color: #646464; }
+.findtext { height: 24px; position: relative; top: -5px; }
+
+.fpblock { width: 100%; padding: 10px 0px 10px 0px; border-bottom: 1px dotted #939393; overflow: hidden; /*background: yellow;*/ }
+.fpblock label {  }
+.fpblock select { margin-top: 5px; }
+
+.error_text { width: 588px; 
+					clear: both;
+					overflow: hidden; 
+					margin-top: 10px;
+					padding: 10px 10px 10px 10px;
+					font: 0.88em/1.3em verdana, sylfaen; 
+					color: #8f4f4b; 
+					background: #ecdcdc; 
+					border: 1px solid #cfafaf;  
+					}
+.auction_add { width: 588px;
+						overflow: hidden; 
+						margin-top: 10px; 
+						padding: 10px 10px 10px 10px;
+						font: 0.88em/1.3em verdana, sylfaen; 
+						color: #678955; 
+						background: #dde6d8; 
+						border: 1px solid #acc69e;  
+						}
+/*users*/
+.user_detailed_page { width: 970px;  }
+.user_detailed_page h1 { width: 100%; }
+.user_personal_info { width: 400px; float: left; font: 0.88em/1.3em verdana, sylfaen; color: #5e5e5e;  }
+.user_personal_info th { text-align: left; }
+.user_personal_info a { text-decoration: none; color: red; }
+.user_personal_info a:hover { text-decoration: underline; }
+.user_info { width: 570px; float: left; font: 0.88em/1.3em verdana, sylfaen; color: #5e5e5e; }
+.user_info th { text-align: left; }
+
+.user_activities { width: 100%;  font: 0.88em/1.3em verdana, sylfaen; color: #5e5e5e;  }
+.user_activities tr { padding-bottom: 5px;  }
+.user_activities th { text-align: left; padding: 5px 0px 5px 0px; }
+.user_activities td { text-align: left; padding: 5px 10px 5px 0px; border-bottom: 1px solid silver; }
+
+div.product_detail { padding-top: 0px; }
+div.product_detail h2 { padding-top: 0px; }
+div.detaled-photo { width: 400px; float: left; }
+div.detaled-photo p{ width: 390px; 
+									padding: 0px; 
+									margin: 0px; }
+div.changestatus { width: 320px; float: left; padding-left: 10px; }
+div.changestatus form { font: 0.88em/1.3em arial, sylfaen; 
+										 color: #5e5e5e; 
+										 width: 100%; }
+div.changestatus form fieldset { border-bottom: 0px; }
+div.changestatus form fieldset label { display: block; padding: 5px 0px 5px 0px; }
+
+.detailed_auction_info { width: 100%;  
+										  font: 0.77em/1.3em arial, sylfaen; 
+										  padding: 3px 0px 3px 0px;  }
+.detailed_auction_info tr { border-spacing: 0px; 
+											border-bottom: 1px solid #C7C7C7; }
+.detailed_auction_info th { text-align: left; }
+
+div.changestatus div.prod_dates { width: 330px; padding: 0px 0px 5px 0px; border-bottom: 1px solid #ebebeb; }
+div.changestatus div.prod_dates p { width: 150px; float: left; padding: 0px 10px 0px 0px; }
+
+.site_params { width: 970px; }
+.site_params h1 { width: 100%; font: 0.88em/1.3em arial, sylfaen; }
+.insert_update_data { width: 750px; float: left; overflow: hidden; /*background: #FFFFCC;*/ }
+.insert_update_data fieldset { padding-bottom: 20px; border-bottom: 1px solid #E0E0E0; }
+.insert_update_data fieldset legend { font: 0.88em/1.3em arial, sylfaen; color: #26657f; padding-top: 10px; }
+.insert_update_data fieldset label { display: block; 
+															width: 100%; 
+															float: none; 
+															overflow: hidden; 
+															/*background: green;*/ 
+															margin: 0px; 
+															padding: 15px 0px 5px 0px; 
+															font: 0.88em/1.3em arial, sylfaen; 
+															color: #1F515F; }
+.insert_update_data fieldset textarea { width: 600px; }
+.insert_update_data fieldset input { width: 594px; 
+															padding: 3px; 
+															border: 1px solid #C9C9C9; 
+															color: #646464; }
+.photo_block { width: 180px; 
+						 overflow: hidden;  
+						 /*background: yellow;*/ 
+						 float: left; 
+						 padding: 5px 0px 5px 0px; 
+						 font: 0.88em/1.3em arial, sylfaen; }
+.insert_update_data fieldset .photo_block input { /*background: yellow;*/ 
+																					overflow: hidden; 
+																					border: 1px solid #fff; 
+																					padding:0px; 
+																					overflow: hidden; }
+.insert_update_data fieldset .photo_block .checkbox { width: 300px; /*background: yellow;*/ }
+.insert_update_data fieldset .photo_block .checkbox input { width: 18px; }
+.insert_update_data fieldset .photo_block .checkbox label { display: inline; padding: 0px; width: 100%; position: relative; top: -3px; height: none; }
+.insert_update_data fieldset .submit { width: 100%; overflow: hidden; /*background: yellow;*/ }
+.insert_update_data fieldset .submit input { width: 110px; padding: 3px; border: 1px solid #C9C9C9; color: #646464; }
+
+.error_list h2 { color: #D65858; }
+.date_no_found h2 { padding-top: 10px; font: 0.77em/1.3em arial, sylfaen; color: #D65858; }
+
+.auction_info { width: 600px; }
+table.auction_info { border: 1px solid #F5F5F5; border-bottom: 0px; border-collapse: separate; border-spacing: 0px; font: 0.77em/1.3em arial, sylfaen; }
+table.auction_info th { width: 200px; 
+									 padding: 3px; 
+									 border-right: 1px solid #F5F5F5; 
+									 color: #5D5D5D;
+									 text-align: left; 
+									 font-weight: normal; 
+									 border-bottom: 1px solid #F5F5F5; }
+table.auction_info td {  padding: 3px; border-bottom: 1px solid #F5F5F5; }
+
+table.auction_info a { text-decoration: none; 
+									 color: #347b90; }
+table.auction_info a:hover { color: #235968; }
+div.bannerblock { 
+							width: 100%;
+							padding-top: 20px;
+							overflow: hidden;
+							}
+div.bannerblock label {
+						width: 100px;
+						display: inline;
+						}	
+div.bannerblock input[type=checkbox] {
+						width: 50px;
+						display: inline;
+						padding: 0px;
+						overflow: hidden;
+}
+div.bannerblock input[type=file] {
+						width: 300px;
+						display: inline;
+						padding: 0px;
+						overflow: hidden;
+}

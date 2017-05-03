@@ -1,0 +1,123 @@
+.userprofile {
+		width: 100%;				
+		border-bottom: 1px solid #ebebeb;
+		overflow: hidden;
+		padding-bottom: 30px;
+		}
+.profile_pic {
+		width: 200px;
+		float: left;
+		padding-right: 30px;
+		}
+.profile_info h1 { 
+			font-family: bpg_algeti; 
+			font-size: 24px;							
+			color: #e9f9fb;
+			background: #47a5ae;
+			width: auto;
+			display: inline;
+			margin-bottom: 20px;
+			overflow: hidden;
+			}
+.profile_info p {
+			font-family: bpg_algeti; 
+			font-size: 14px;
+			padding-bottom: 5px;
+			}
+.profile_info span {
+			font-family: bpg_algeti; 
+			font-size: 12px;
+			color: #47a5ae;
+			}
+.profile_info span a {
+			color: #47a5ae;
+			}
+.profile_info span a:hover {
+			text-decoration: underline;
+			}
+.user_friend ul {
+			width: 100%;
+			overflow: hidden;
+			padding-bottom: 5px;
+			}
+.user_friend ul li  { 
+			width: 50px;
+			float: left;
+			padding-right: 10px;
+			}
+.user_friend span {
+			font-family: bpg_algeti; 
+			font-size: 12px;
+			color: #47a5ae;
+			}
+.user_friend span a {
+			color: #47a5ae;
+			}
+.user_friend span a:hover {
+			text-decoration: underline;
+			}
+.userwish { 
+		width: 100%;
+		padding: 20px 0px 20px 0px;
+		border-bottom: 1px solid #ebebeb;
+		overflow: hidden;
+		}
+.userwish:hover{ 
+		background: #eaf3f4;
+		}
+.deadline { 
+		margin-top: 10px;
+		padding: 3px;
+		background: #47a5ae;
+		font-family: bpg_algeti; 
+		font-size: 13px;
+		color: #eeeeee;
+		} 
+.wish_pic {
+		width: 100px;
+		float: left;
+		padding-right: 20px;
+		}
+.wishlist h2 {
+			font-family: bpg_algeti; 
+			font-size: 15px;
+			color: #47a5ae;
+			font-weight: bold;
+			}
+.wish_descr h3 {
+			font: 1.3em/1.3em verdana, sylfaen; 
+			color: #47a5ae;
+			padding-bottom: 10px;		
+			}
+.wish_descr h3 a {
+			color: #47a5ae;
+			}
+.wish_descr p {
+			font: 0.88em/1.3em verdana, sylfaen; 
+			color: #494949;
+			}
+.friendwish { 
+			width: 100%;
+			padding: 20px 0px 20px 0px;
+			border-bottom: 1px solid #ebebeb;
+			overflow: hidden;
+			}
+.friendwishlist h4 {
+			font-family: bpg_algeti; 
+			font-size: 15px;
+			color: #47a5ae;
+			font-weight: bold;
+			}
+.friendwishlist h5 {
+			font: 0.89em/1.3em verdana, sylfaen; 
+			font-size: 15px;
+			color: #47a5ae;
+			padding-bottom: 10px;		
+			}
+.wish_descr h5 a {
+			color: #47a5ae;
+			}
+.friendwish .wish_descr p {
+			font: 0.77em/1.3em verdana, sylfaen; 
+			color: #494949;
+			}
